@@ -94,13 +94,6 @@ def say_message_kathy(message: str) -> dict:
     return {'message': message, 'voice': 'Kathy', 'status': 'spoken'}
 
 @mcp.tool()
-def say_message_nicky(message: str) -> dict:
-    """Use the MacOS text-to-speech with Nicky's voice to say the provided message.
-    Nicky has a youthful, energetic voice with a casual tone."""
-    subprocess.run(["say", "-v", "Nicky", message])
-    return {'message': message, 'voice': 'Nicky', 'status': 'spoken'}
-
-@mcp.tool()
 def say_message_superstar(message: str) -> dict:
     """Use the MacOS text-to-speech with Superstar voice to say the provided message.
     Superstar has a dramatic, exaggerated voice with a theatrical quality."""
